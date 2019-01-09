@@ -18,7 +18,7 @@ public class main extends javax.swing.JFrame {
      */
     public main() {
         initComponents();
-
+        jLabel1.setText("Bienvenido");
     }
 
     /**
