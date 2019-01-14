@@ -9,9 +9,10 @@ public class Afiliados implements java.io.Serializable {
     private String nombre;
     private String apellido;
     private String cedula;
+    private String numfiliado;
 
     public Afiliados() {
-        cedula = nombre = apellido = "%";
+        cedula = nombre = apellido = numfiliado = "%";
     }
 
     public String getNombre() {
@@ -50,7 +51,13 @@ public class Afiliados implements java.io.Serializable {
     public String toString() {
         return "Afiliados{" + "idafiliado=" + idafiliado + ", nombre=" + nombre + ", apellido=" + apellido + ", cedula=" + cedula + '}';
     }
-    
-    
+
+    public String getNumfiliado() {
+        return numfiliado;
+    }
+
+    public void setNumfiliado(String numfiliado) {
+        this.numfiliado = numfiliado;
+    }
 
 }

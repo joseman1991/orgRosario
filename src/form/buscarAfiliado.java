@@ -230,6 +230,7 @@ public class buscarAfiliado extends javax.swing.JDialog {
         a.setApellido(jTextField1.getText() + "%");
         a.setNombre(jTextField1.getText() + "%");
         a.setCedula(jTextField1.getText() + "%");
+        a.setNumfiliado(jTextField1.getText() + "%");
         a.setIdafiliado(0);
         btnSel.setEnabled(false);
         iniciar();
