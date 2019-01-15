@@ -22,7 +22,7 @@ public class AfiliadosDAO extends ConexionMySQL<Afiliados> {
 
     @Override
     public DataSet obtenerDataSet(Afiliados dato) throws SQLException {
-        campos = "idafiliado,cedula, nombre, apellido";
+        campos = "idafiliado,numfiliado,cedula, nombre, apellido";
         camposCondicion = "cedula,nombre,apellido,numfiliado";
         condicion = "where cedula like ? or nombre like ? or apellido like ? or numfiliado like ?";
         DataSet dt = super.obtenerDataSet(dato);
